@@ -390,16 +390,19 @@
         <span class="bl"></span><span class="br"></span>
         <div class="p-head">
           <div>
-            <div class="p-title">Document-Based AI Chatbot (RAG System)</div>
-            <div class="p-sub">Freelance Project</div>
+            <div class="p-title">BioMed Advanced RAG Chatbot</div>
+            <div class="p-sub">Freelance Project · Iterative &amp; Self-Correcting RAG over Biomedical Documents</div>
           </div>
           <span class="tag a"><span class="dot"></span>freelance</span>
         </div>
         <div class="p-body">
-          <p>Built a RAG system with an iterative self-refinement pipeline that evaluates answer completeness and expands context until it's satisfied.</p>
-          <p>Designed context-expansion with prioritized weighting for structured tables, plus API rotation logic for stable real-time performance.</p>
+          <p>Built an enhanced RAG pipeline for accurate Q&amp;A over biomedical documents, moving beyond single-pass retrieval to an iterative, self-correcting loop that strictly grounds answers in source content.</p>
+          <p>Implemented a self-evaluation mechanism where the LLM grades its own answers as complete, partial or missing information, automatically triggering corrective re-retrieval and progressive context expansion until the answer holds up.</p>
+          <p>Designed multimodal retrieval with separate pipelines for text and tables, prioritizing structured table data for stronger factual grounding and filtering out low-quality chunks before they reach the model.</p>
+          <p>Engineered context-aware chunking with token-aware trimming and source-tracking, so the system reuses only the chunks it needs and stays transparent about what it actually cited.</p>
+          <p>Added short-term conversational memory via compressed chat history, plus production-oriented hardening: API key rotation, and robust retry/error handling for rate limits (429) and payload-size errors (413).</p>
         </div>
-        <div class="p-tags"><span class="chip">RAG</span><span class="chip">Vector Search</span><span class="chip">Embeddings</span></div>
+        <div class="p-tags"><span class="chip">RAG</span><span class="chip">ChromaDB</span><span class="chip">Iterative Retrieval</span><span class="chip">Self-Correction</span><span class="chip">Multimodal (Text + Tables)</span><span class="chip">Streamlit</span></div>
       </div>
 
       <div class="project bracket reveal">
